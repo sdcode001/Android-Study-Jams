@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/product_add_dialog"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Product"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/new_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittext_background"
+        />
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:textColorHint="@color/white"
+        android:textSize="30sp"
+        android:inputType="text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_background"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        >
+        <Button
+            android:id="@+id/cancel_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cancel_btn_background"
+            android:elevation="25dp"
+
+            />
+        <Button
+            android:id="@+id/add_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="145dp"
+            android:background="@drawable/add_customer_btn_background"
+            android:elevation="25dp"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

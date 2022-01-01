@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/customer_details_row"
+    >
+   <LinearLayout
+       android:layout_width="55dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:orientation="vertical"
+       android:layout_marginLeft="3dp"
+       >
+       <TextView
+           android:id="@+id/name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="name"
+           android:textColor="@color/black"
+           android:textSize="16sp"
+           />
+
+       <TextView
+           android:id="@+id/phn_no"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="9dp"
+           android:text="phone_no"
+           android:textColor="@color/black"
+           android:textSize="16sp" />
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="3dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customers Due"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/customer_due"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:text="0"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_marginLeft="3dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Due"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/your_due"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:text="0"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="3dp"
+        >
+       <ImageButton
+           android:id="@+id/update_btn"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:background="@color/white"
+           android:src="@drawable/update_btn_icon"
+           android:onClick="update_btn"
+           />
+        <ImageButton
+            android:id="@+id/delete_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:src="@drawable/delete_btn_icon"
+            android:onClick="delete_btn"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+

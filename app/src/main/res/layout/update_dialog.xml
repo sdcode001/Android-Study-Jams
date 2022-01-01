@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+
+    <EditText
+        android:id="@+id/new_due"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Due Amount"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_background"
+        />
+    <EditText
+        android:id="@+id/paid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Paid by customer"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_background"
+        />
+    <EditText
+        android:id="@+id/your_new_due"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Due to customer(New)"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_background"
+        />
+    <EditText
+        android:id="@+id/paid_to_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Paid to customer"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_background"
+        />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/drawable/add_customer_btn_background.xml" value="0.20416666666666666" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/drawable/cancel_btn_background.xml" value="0.20416666666666666" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/drawable/doted_line.xml" value="0.20051282051282052" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/drawable/edittext_background.xml" value="0.20416666666666666" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/drawable/shop_button_background.xml" value="0.20416666666666666" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/drawable/update_btn_background.xml" value="0.20416666666666666" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/activity_add_customer.xml" value="0.1875" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/activity_add_customer2.xml" value="0.1875" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/activity_add_new_product.xml" value="0.18802083333333333" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/activity_product_list.xml" value="0.18802083333333333" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/activity_shop_name.xml" value="0.18802083333333333" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/add_customer_activity.xml" value="0.18802083333333333" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/costomer_details.xml" value="0.22" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/product_add.xml" value="0.18802083333333333" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/product_add_dialog.xml" value="0.18802083333333333" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/product_details.xml" value="0.18802083333333333" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/shop_name_dialog.xml" value="0.18802083333333333" />
+        <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/layout/update_dialog.xml" value="0.18802083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/upper_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginBottom="3dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardElevation="12dp"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/shop_name"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray"
+                android:text="My Shop"
+                android:textColor="@color/white"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/shop_name_btn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shop_button_background"
+                android:elevation="20dp"
+                android:text="Shop Name"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:onClick="shop_name_btn"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:padding="4dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lower_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginTop="3dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardElevation="12dp"
+
+        >
+
+        <ImageButton
+            android:id="@+id/list_btn"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:layout_marginLeft="45dp"
+            android:elevation="35dp"
+            android:src="@drawable/note_icon1"
+
+            />
+
+        <ImageButton
+            android:id="@+id/bell_btn"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:layout_marginLeft="150dp"
+            android:onClick="bell_btn"
+            android:elevation="30dp"
+            android:src="@drawable/bell_icon" />
+
+        <Button
+         android:id="@+id/add_customer_btn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+         android:text="+ADD"
+         android:textStyle="bold"
+         android:textSize="25sp"
+         android:layout_marginLeft="250dp"
+         android:background="@drawable/add_customer_btn_background"
+         android:elevation="12dp"
+         >
+
+     </Button>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
