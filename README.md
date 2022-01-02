@@ -20,3 +20,6 @@ Following are few android concepts used to achieve the functionalities in app :
 #### SharedPreferences: To store the shop name sharedpreferences is used here.A separate class is made for sharedpreferences and its methods.
 #### AlertDialog: Alertdialogs are used to update customers records,to alert about deletion,to alert about sending SMS.
 
+### Application Link & Future Scope :
+
+
