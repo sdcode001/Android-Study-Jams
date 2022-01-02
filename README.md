@@ -25,4 +25,7 @@ I have uploaded this app on playstore 1 day ago(1/1/2022) and find some problem 
 https://play.google.com/store/apps/developer?id=dEySoUvIk
 
 
+Coming to the future plan: i want to make this app a server clint based app.shop owner will have server site app where he/she can set product menu and all product details and using clint site app customers can select and order the products from there phone and also this app will have google map through which customers can track their orders.
+
+
 
