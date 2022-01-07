@@ -22,7 +22,7 @@ Following are few android concepts used to achieve the functionalities in app :
 
 ### Application Link & Future Scope :
 I have uploaded this app on playstore 1 day ago(1/1/2022) and find some problem on publication on playstore.i will fix a reupload it so it will take some days to pubish.here is my playstore developer account link and it will available here: 
-https://play.google.com/store/apps/developer?id=dEySoUvIk
+https://play.google.com/store/apps/developer?id=dEySoUvIk and release APK also available in this repository
 
 
 Coming to the future plan: i want to make this app a server clint based app.shop owner will have server site app where he/she can set product menu and all product details and using clint site app customers can select and order the products from there phone and also this app will have google map through which customers can track their orders.
