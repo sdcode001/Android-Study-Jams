@@ -1,4 +1,4 @@
-package eu.deysouvik.easybillbook
+package eu.deysouvik.easybillbook.models
 
 class Product{
     var Id:Int=0

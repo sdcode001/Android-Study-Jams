@@ -1,4 +1,4 @@
-package eu.deysouvik.easybillbook.repository
+package eu.deysouvik.easybillbook.utils
 
 import android.content.Context
 

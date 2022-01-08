@@ -2,7 +2,7 @@ package eu.deysouvik.easybillbook.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import eu.deysouvik.easybillbook.Customer
+import eu.deysouvik.easybillbook.models.Customer
 
 class MainActivityViewModel {
 

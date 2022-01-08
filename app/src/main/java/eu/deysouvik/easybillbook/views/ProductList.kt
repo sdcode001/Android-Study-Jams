@@ -10,8 +10,8 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import eu.deysouvik.easybillbook.*
-import eu.deysouvik.easybillbook.repository.Constants
-import eu.deysouvik.easybillbook.repository.database.Product_DBHandler
+import eu.deysouvik.easybillbook.utils.Constants
+import eu.deysouvik.easybillbook.utils.Product_DBHandler
 
 class ProductList : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package eu.deysouvik.easybillbook.repository.database
+package eu.deysouvik.easybillbook.utils
 
 import android.content.ContentValues
 import android.content.Context
@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
 import android.widget.Toast
-import eu.deysouvik.easybillbook.Product
+import eu.deysouvik.easybillbook.models.Product
 
 
 class Product_DBHandler(context: Context, name:String?, factory: SQLiteDatabase.CursorFactory?, version:Int):

@@ -1,7 +1,6 @@
 package eu.deysouvik.easybillbook.views
 
 import android.Manifest
-import android.content.DialogInterface
 import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
@@ -16,9 +15,9 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import eu.deysouvik.easybillbook.*
-import eu.deysouvik.easybillbook.repository.Constants
-import eu.deysouvik.easybillbook.repository.PreferenceProvider
-import eu.deysouvik.easybillbook.repository.database.DBHandler
+import eu.deysouvik.easybillbook.utils.Constants
+import eu.deysouvik.easybillbook.utils.PreferenceProvider
+import eu.deysouvik.easybillbook.utils.DBHandler
 import kotlinx.android.synthetic.main.activity_main.*
 
 

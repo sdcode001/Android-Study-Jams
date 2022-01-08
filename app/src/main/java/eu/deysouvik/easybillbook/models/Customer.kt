@@ -1,4 +1,4 @@
-package eu.deysouvik.easybillbook
+package eu.deysouvik.easybillbook.models
 
 class Customer{
     var customerID:Int=0

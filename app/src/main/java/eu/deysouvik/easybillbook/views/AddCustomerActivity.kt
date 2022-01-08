@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.telephony.SmsManager
 import android.widget.Toast
-import eu.deysouvik.easybillbook.repository.Constants
-import eu.deysouvik.easybillbook.Customer
+import eu.deysouvik.easybillbook.utils.Constants
+import eu.deysouvik.easybillbook.models.Customer
 import eu.deysouvik.easybillbook.R
 import kotlinx.android.synthetic.main.activity_add_customer2.*
 

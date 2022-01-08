@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import eu.deysouvik.easybillbook.models.Product
 import eu.deysouvik.easybillbook.views.ProductList
 import kotlinx.android.synthetic.main.product_details.view.*
 

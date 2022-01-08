@@ -1,4 +1,4 @@
-package eu.deysouvik.easybillbook.repository
+package eu.deysouvik.easybillbook.utils
 
 object Constants {
     const  val KEY_SHOP_NAME="SHOP_NAME"

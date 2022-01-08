@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import eu.deysouvik.easybillbook.models.Customer
 import eu.deysouvik.easybillbook.views.MainActivity
 import kotlinx.android.synthetic.main.costomer_details.view.*
 
@@ -38,7 +39,7 @@ class CustomerAdapter(mCtx:Context,val customers:ArrayList<Customer>): RecyclerV
     }
 
     override fun onBindViewHolder(p0: CustomerAdapter.ViewHolder, p1: Int){
-       val customer:Customer=customers[p1]
+       val customer: Customer =customers[p1]
         p0.tv_name.text=customer.customerName
         p0.tv_phn_no.text=customer.customerPhnNo
         p0.tv_customer_due.text=customer.customerDue.toString()
