@@ -42,11 +42,7 @@ class MainActivity : AppCompatActivity(){
 
         Shop_NAME =findViewById(R.id.shop_name)
 
-        if(ContextCompat.checkSelfPermission(this,Manifest.permission.SEND_SMS)== PackageManager.PERMISSION_GRANTED &&
-            ContextCompat.checkSelfPermission(this,Manifest.permission.READ_PHONE_STATE)== PackageManager.PERMISSION_GRANTED){
-
-        }
-        else{
+        if (ContextCompat.checkSelfPermission(this,Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED || ContextCompat.checkSelfPermission(this,Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.SEND_SMS, Manifest.permission.READ_PHONE_STATE), SMS_PERMISSION_CODE)
         }
 
@@ -76,7 +72,6 @@ class MainActivity : AppCompatActivity(){
         val rv:RecyclerView=findViewById(R.id.my_recyclerview)
         rv.layoutManager=LinearLayoutManager(this, RecyclerView.VERTICAL,false) as RecyclerView.LayoutManager
         rv.adapter=adapter
-
     }
 
     override fun onResume() {
@@ -92,17 +87,26 @@ class MainActivity : AppCompatActivity(){
         alert_dialog.setIcon(R.drawable.notify_icon)
         alert_dialog.setMessage("Are you sure to notify all customers about their payment details!!")
         var count=0
-        alert_dialog.setPositiveButton("Yes",DialogInterface.OnClickListener { dialog, which ->
-            for(i in customer_list){
-                if(i.customerDue!=0.0 || i.myDue!=0.0){
-                    send_sms(i.customerName,i.customerPhnNo.trim(),i.customerDue.toString(),i.myDue.toString())
+        alert_dialog.setPositiveButton("Yes") { _, _ ->
+            for (i in customer_list) {
+                if (i.customerDue != 0.0 || i.myDue != 0.0) {
+                    send_sms(
+                        i.customerName,
+                        i.customerPhnNo.trim(),
+                        i.customerDue.toString(),
+                        i.myDue.toString()
+                    )
                     count++
                 }
             }
-            Toast.makeText(this, "Payment details successfully sent to $count customers", Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                this,
+                "Payment details successfully sent to $count customers",
+                Toast.LENGTH_SHORT
+            ).show()
 
-        })
-        alert_dialog.setNegativeButton("No",DialogInterface.OnClickListener { dialog, which ->  })
+        }
+        alert_dialog.setNegativeButton("No") { _, _ -> }
         alert_dialog.show()
     }
 
@@ -118,23 +122,15 @@ class MainActivity : AppCompatActivity(){
         }
 
         try {
-
             val smsManager: SmsManager = SmsManager.getDefault()
             smsManager.sendTextMessage(number,null,sms,null,null)
         }catch(e:Exception){
             e.printStackTrace()
         }
-
-
     }
-
-
 
     fun shop_name_btn(view: View){
         val intt=Intent(this, Shop_Name::class.java)
        startActivity(intt)
     }
-
-
-
 }

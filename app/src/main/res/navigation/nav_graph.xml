@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="eu.deysouvik.easybillbook.views.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/productList"
+        android:name="eu.deysouvik.easybillbook.views.ProductList"
+        android:label="activity_product_list"
+        tools:layout="@layout/activity_product_list" />
+    <activity
+        android:id="@+id/addCustomerActivity"
+        android:name="eu.deysouvik.easybillbook.views.AddCustomerActivity"
+        android:label="activity_add_customer2"
+        tools:layout="@layout/activity_add_customer2" />
+    <activity
+        android:id="@+id/add_new_product_activity"
+        android:name="eu.deysouvik.easybillbook.views.add_new_product_activity"
+        android:label="product_add_dialog"
+        tools:layout="@layout/product_add_dialog" />
+    <activity
+        android:id="@+id/shop_Name"
+        android:name="eu.deysouvik.easybillbook.views.Shop_Name"
+        android:label="activity_shop_name"
+        tools:layout="@layout/activity_shop_name" />
+</navigation>

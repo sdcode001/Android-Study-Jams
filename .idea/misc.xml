@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/GDSC_Android_Study_Jam/Easy_Bill_Book/Easy-Bill-Book.App/app/src/main/res/layout/activity_add_customer2.xml" value="0.25364583333333335" />
         <entry key="..\:/Projects/GDSC_Android_Study_Jam/Easy_Bill_Book/Easy-Bill-Book.App/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Projects/GDSC_Android_Study_Jam/Easy_Bill_Book/Easy-Bill-Book.App/app/src/main/res/layout/activity_product_list.xml" value="0.25364583333333335" />
         <entry key="..\:/Projects/GDSC_Android_Study_Jam/Easy_Bill_Book/Easy-Bill-Book.App/app/src/main/res/layout/activity_shop_name.xml" value="0.25364583333333335" />
+        <entry key="..\:/Projects/GDSC_Android_Study_Jam/Easy_Bill_Book/Easy-Bill-Book.App/app/src/main/res/layout/costomer_details.xml" value="0.25364583333333335" />
         <entry key="..\:/Projects/GDSC_Android_Study_Jam/Easy_Bill_Book/Easy-Bill-Book.App/app/src/main/res/layout/product_add_dialog.xml" value="0.25364583333333335" />
+        <entry key="..\:/Projects/GDSC_Android_Study_Jam/Easy_Bill_Book/Easy-Bill-Book.App/app/src/main/res/layout/product_details.xml" value="0.25364583333333335" />
+        <entry key="..\:/Projects/GDSC_Android_Study_Jam/Easy_Bill_Book/Easy-Bill-Book.App/app/src/main/res/layout/update_dialog.xml" value="0.25364583333333335" />
         <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/drawable/add_customer_btn_background.xml" value="0.20416666666666666" />
         <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/drawable/cancel_btn_background.xml" value="0.20416666666666666" />
         <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/drawable/doted_line.xml" value="0.20051282051282052" />
