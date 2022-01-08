@@ -1,18 +1,13 @@
-package eu.deysouvik.easybillbook
+package eu.deysouvik.easybillbook.views
 
 import android.Manifest
-import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
-import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.telephony.SmsManager
-import android.view.LayoutInflater
 import android.view.View
-import android.widget.EditText
-import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -20,8 +15,10 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.snackbar.Snackbar
-import eu.deysouvik.easybillbook.MainActivity.Companion.SMS_PERMISSION_CODE
+import eu.deysouvik.easybillbook.*
+import eu.deysouvik.easybillbook.repository.Constants
+import eu.deysouvik.easybillbook.repository.PreferenceProvider
+import eu.deysouvik.easybillbook.repository.database.DBHandler
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -39,11 +36,11 @@ class MainActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        dbHandler=DBHandler(this,null,null,1)
+        dbHandler = DBHandler(this,null,null,1)
 
-        preferenceProvider= PreferenceProvider(this)
+        preferenceProvider = PreferenceProvider(this)
 
-        Shop_NAME=findViewById(R.id.shop_name)
+        Shop_NAME =findViewById(R.id.shop_name)
 
         if(ContextCompat.checkSelfPermission(this,Manifest.permission.SEND_SMS)== PackageManager.PERMISSION_GRANTED &&
             ContextCompat.checkSelfPermission(this,Manifest.permission.READ_PHONE_STATE)== PackageManager.PERMISSION_GRANTED){
@@ -60,12 +57,12 @@ class MainActivity : AppCompatActivity(){
         viewCustomers()
 
         add_customer_btn.setOnClickListener {
-            val i= Intent(this,AddCustomerActivity::class.java)
+            val i= Intent(this, AddCustomerActivity::class.java)
             startActivity(i)
         }
 
         list_btn.setOnClickListener {
-                val intent=Intent(this,ProductList::class.java)
+                val intent=Intent(this, ProductList::class.java)
                 startActivity(intent)
 
         }
@@ -75,7 +72,7 @@ class MainActivity : AppCompatActivity(){
 
     private fun viewCustomers(){
         val customerlist= dbHandler.getCustomers(this)
-        val adapter=CustomerAdapter(this,customerlist)
+        val adapter= CustomerAdapter(this,customerlist)
         val rv:RecyclerView=findViewById(R.id.my_recyclerview)
         rv.layoutManager=LinearLayoutManager(this, RecyclerView.VERTICAL,false) as RecyclerView.LayoutManager
         rv.adapter=adapter
@@ -134,7 +131,7 @@ class MainActivity : AppCompatActivity(){
 
 
     fun shop_name_btn(view: View){
-        val intt=Intent(this,Shop_Name::class.java)
+        val intt=Intent(this, Shop_Name::class.java)
        startActivity(intt)
     }
 

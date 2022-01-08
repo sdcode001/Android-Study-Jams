@@ -1,11 +1,11 @@
-package eu.deysouvik.easybillbook
+package eu.deysouvik.easybillbook.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import eu.deysouvik.easybillbook.repository.Constants
+import eu.deysouvik.easybillbook.R
 import kotlinx.android.synthetic.main.activity_shop_name.*
 
 class Shop_Name : AppCompatActivity() {

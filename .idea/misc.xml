@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/GDSC_Android_Study_Jam/Easy_Bill_Book/Easy-Bill-Book.App/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Projects/GDSC_Android_Study_Jam/Easy_Bill_Book/Easy-Bill-Book.App/app/src/main/res/layout/activity_shop_name.xml" value="0.25364583333333335" />
+        <entry key="..\:/Projects/GDSC_Android_Study_Jam/Easy_Bill_Book/Easy-Bill-Book.App/app/src/main/res/layout/product_add_dialog.xml" value="0.25364583333333335" />
         <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/drawable/add_customer_btn_background.xml" value="0.20416666666666666" />
         <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/drawable/cancel_btn_background.xml" value="0.20416666666666666" />
         <entry key="..\:/my programming/android projects/EasyBillBook/app/src/main/res/drawable/doted_line.xml" value="0.20051282051282052" />
@@ -25,7 +28,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

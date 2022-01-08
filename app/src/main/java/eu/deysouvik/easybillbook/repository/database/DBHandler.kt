@@ -1,4 +1,4 @@
-package eu.deysouvik.easybillbook
+package eu.deysouvik.easybillbook.repository.database
 
 import android.content.ContentValues
 import android.content.Context
@@ -6,9 +6,10 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
 import android.widget.Toast
+import eu.deysouvik.easybillbook.Customer
 
 class DBHandler(context: Context, name:String?, factory:SQLiteDatabase.CursorFactory?, version:Int):
-    SQLiteOpenHelper(context,DATABASE_NAME,factory,DATABASE_VERSION){
+    SQLiteOpenHelper(context, DATABASE_NAME,factory, DATABASE_VERSION){
 
     companion object{
         private val DATABASE_NAME="MyData.db"
@@ -49,7 +50,7 @@ class DBHandler(context: Context, name:String?, factory:SQLiteDatabase.CursorFac
         }
         else{
             while(cursor.moveToNext()){
-                val customer=Customer()
+                val customer= Customer()
                 customer.customerID=cursor.getInt(cursor.getColumnIndex(COLUMN_CUSTOMERID).toInt())
                 customer.customerName=cursor.getString(cursor.getColumnIndex(COLUMN_CUSTOMERNAME).toInt())
                 customer.customerPhnNo=cursor.getString(cursor.getColumnIndex(COLUMN_CUSTOMERPHNNO).toInt())

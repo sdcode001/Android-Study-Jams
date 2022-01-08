@@ -13,32 +13,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasyBillBook">
         <activity
-            android:name=".Shop_Name"
+            android:name=".views.Shop_Name"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="adjustResize"
             />
         <activity
-            android:name=".add_new_product_activity"
+            android:name=".views.add_new_product_activity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ProductList"
+            android:name=".views.ProductList"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".AddCustomerActivity"
+            android:name=".views.AddCustomerActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".MainActivity"
+            android:name=".views.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"

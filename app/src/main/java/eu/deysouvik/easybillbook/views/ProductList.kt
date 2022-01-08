@@ -1,32 +1,29 @@
-package eu.deysouvik.easybillbook
+package eu.deysouvik.easybillbook.views
 
 import android.app.AlertDialog
-import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.telephony.SmsManager
-import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
-import android.widget.EditText
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import eu.deysouvik.easybillbook.*
+import eu.deysouvik.easybillbook.repository.Constants
+import eu.deysouvik.easybillbook.repository.database.Product_DBHandler
 
 class ProductList : AppCompatActivity() {
-
 
     companion object{
         lateinit var productdbHandler: Product_DBHandler
     }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product_list)
 
-        productdbHandler=Product_DBHandler(this,null,null,1)
+        productdbHandler = Product_DBHandler(this,null,null,1)
 
         viewProducts()
 
@@ -34,7 +31,7 @@ class ProductList : AppCompatActivity() {
 
     private fun viewProducts(){
         val products= productdbHandler.getProducts(this)
-        val Adpater=Product_Adapter(this,products)
+        val Adpater= Product_Adapter(this,products)
         val rv:RecyclerView=findViewById(R.id.rv_productlist)
         rv.layoutManager=LinearLayoutManager(this,RecyclerView.VERTICAL,false) as RecyclerView.LayoutManager
         rv.adapter=Adpater
@@ -46,25 +43,23 @@ class ProductList : AppCompatActivity() {
     }
 
     fun add_btn(view: View){
-        val inte=Intent(this,add_new_product_activity::class.java)
+        val inte=Intent(this, add_new_product_activity::class.java)
         startActivity(inte)
     }
 
    fun notify_btn(view:View){
-      val alert_dialog=AlertDialog.Builder(this)
-       alert_dialog.setTitle("Alert!")
-       alert_dialog.setIcon(R.drawable.notify_icon)
-       alert_dialog.setMessage("Are you sure to notify all customers about Product list!!")
-       alert_dialog.setPositiveButton("Yes",DialogInterface.OnClickListener { dialog, which ->
-           send_notification()
-       })
-       alert_dialog.setNegativeButton("No",DialogInterface.OnClickListener { dialog, which ->  })
-       alert_dialog.show()
+      AlertDialog.Builder(this)
+          .setTitle("Alert!")
+          .setIcon(R.drawable.notify_icon)
+          .setMessage("Are you sure to notify all customers about Product list!!")
+          .setPositiveButton("Yes") { _, _ -> send_notification() }
+          .setNegativeButton("No") { _, _ -> }
+          .show()
    }
 
 
     fun send_notification(){
-        val customers=MainActivity.dbHandler.getCustomers(this)
+        val customers= MainActivity.dbHandler.getCustomers(this)
         val products= productdbHandler.getProducts(this)
         var sms="Welcome to My Shop.Products available-->"
         if(MainActivity.preferenceProvider.getBoolean(Constants.KEY_SAVED)){
@@ -90,14 +85,5 @@ class ProductList : AppCompatActivity() {
             e.printStackTrace()
             Toast.makeText(this, e.message.toString(), Toast.LENGTH_SHORT).show()
         }
-
-
     }
-
-
-
-
-
-
-
 }

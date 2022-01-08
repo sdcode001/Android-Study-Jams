@@ -1,13 +1,12 @@
-package eu.deysouvik.easybillbook
+package eu.deysouvik.easybillbook.views
 
-import android.Manifest
-import android.app.PendingIntent
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.telephony.SmsManager
 import android.widget.Toast
-import androidx.core.app.ActivityCompat
+import eu.deysouvik.easybillbook.repository.Constants
+import eu.deysouvik.easybillbook.Customer
+import eu.deysouvik.easybillbook.R
 import kotlinx.android.synthetic.main.activity_add_customer2.*
 
 class AddCustomerActivity : AppCompatActivity() {
@@ -23,7 +22,7 @@ class AddCustomerActivity : AppCompatActivity() {
                 phn_no.requestFocus()
             }
             else{
-                val customer=Customer()
+                val customer= Customer()
                 customer.customerName=name.text.toString()
                 customer.customerPhnNo=phn_no.text.toString().trim()
                 if(customer_due.text.isEmpty()){

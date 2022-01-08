@@ -7,11 +7,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import eu.deysouvik.easybillbook.views.ProductList
 import kotlinx.android.synthetic.main.product_details.view.*
 
-class Product_Adapter(mCtx: Context,val products:ArrayList<Product>): RecyclerView.Adapter<Product_Adapter.ViewHolder>() {
-
-    val mCtx=mCtx
+class Product_Adapter(val mCtx: Context,val products:ArrayList<Product>): RecyclerView.Adapter<Product_Adapter.ViewHolder>() {
 
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         val tv_name=itemView.product_name
@@ -50,13 +49,5 @@ class Product_Adapter(mCtx: Context,val products:ArrayList<Product>): RecyclerVi
                 Toast.makeText(mCtx, "Error Deleting!", Toast.LENGTH_SHORT).show()
             }
         }
-
-
-
-
-
     }
-
-
-
 }

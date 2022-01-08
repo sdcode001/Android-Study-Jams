@@ -1,4 +1,4 @@
-package eu.deysouvik.easybillbook
+package eu.deysouvik.easybillbook.repository.database
 
 import android.content.ContentValues
 import android.content.Context
@@ -6,10 +6,11 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
 import android.widget.Toast
+import eu.deysouvik.easybillbook.Product
 
 
 class Product_DBHandler(context: Context, name:String?, factory: SQLiteDatabase.CursorFactory?, version:Int):
-    SQLiteOpenHelper(context,Database_NAME,factory,Database_VERSION){
+    SQLiteOpenHelper(context, Database_NAME,factory, Database_VERSION){
 
     companion object{
         private val Database_NAME="MyProductData.db"
@@ -45,7 +46,7 @@ class Product_DBHandler(context: Context, name:String?, factory: SQLiteDatabase.
         }
         else{
             while(cursor.moveToNext()){
-                val product=Product()
+                val product= Product()
                 product.Id=cursor.getInt(cursor.getColumnIndex(COLUMN_PRODUCTID).toInt())
                 product.Name=cursor.getString(cursor.getColumnIndex(COLUMN_PRODUCTNAME).toInt())
                 product.Price=cursor.getString(cursor.getColumnIndex(COLUMN_PRODUCTPRICE).toInt())

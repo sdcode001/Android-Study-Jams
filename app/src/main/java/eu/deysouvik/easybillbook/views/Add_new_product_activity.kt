@@ -1,9 +1,11 @@
-package eu.deysouvik.easybillbook
+package eu.deysouvik.easybillbook.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
+import eu.deysouvik.easybillbook.Product
+import eu.deysouvik.easybillbook.R
 import kotlinx.android.synthetic.main.product_add_dialog.*
 
 class add_new_product_activity : AppCompatActivity() {
@@ -30,7 +32,7 @@ class add_new_product_activity : AppCompatActivity() {
                 Toast.makeText(this, "Product name/price is empty", Toast.LENGTH_SHORT).show()
             }
             else{
-                val product=Product()
+                val product= Product()
                 product.Name=name
                 product.Price=price
                 ProductList.productdbHandler.addProduct(this,product)

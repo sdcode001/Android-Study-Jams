@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import eu.deysouvik.easybillbook.views.MainActivity
 import kotlinx.android.synthetic.main.costomer_details.view.*
 
 class CustomerAdapter(mCtx:Context,val customers:ArrayList<Customer>): RecyclerView.Adapter<CustomerAdapter.ViewHolder>(){
@@ -124,7 +125,7 @@ class CustomerAdapter(mCtx:Context,val customers:ArrayList<Customer>): RecyclerV
 
 
 
-               val isUpdate:Boolean=MainActivity.dbHandler.updateCustomer(customer.customerID.toString(),
+               val isUpdate:Boolean= MainActivity.dbHandler.updateCustomer(customer.customerID.toString(),
                                                                           customer.customerName,
                                                                           customer.customerPhnNo,
                                                                           total_due.toString(),
