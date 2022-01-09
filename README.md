@@ -16,7 +16,7 @@ Following are few android concepts used to achieve the functionalities in app :
 #### RecyclerView: To show customer records,name and phone number recyclerview is used in vertical mode.Recyclerview is also used to show product list.
 #### Adapters: RecyclerView Adapters are used to make connection between databases and recyclerviews.
 #### SmsManager: This api is used to send SMS from users phone to customers phone numbers.
-#### Database: Here two SQlite databases is used. one to store customer records and another for product lists.
+#### Database: Here two Room databases is used. one to store customer records and another for product lists.
 #### SharedPreferences: To store the shop name sharedpreferences is used here.A separate class is made for sharedpreferences and its methods.
 #### AlertDialog: Alertdialogs are used to update customers records,to alert about deletion,to alert about sending SMS.
 
