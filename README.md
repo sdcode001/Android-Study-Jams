@@ -12,14 +12,14 @@ This "Easy Bill Book" app can maintain all customer's bills/payments/dues in the
 
 ### Functionality & Concepts used :
 Following are few android concepts used to achieve the functionalities in app :
-#### LinearLayout: All the activities uses LinearLayout to position buttons,textviews,edittexts and recyclerviews.
-#### App Navigation Graph: This App uses App Navigation to switch between different screens.
-#### RecyclerView: To show customer records,name and phone number recyclerview is used in vertical mode.Recyclerview is also used to show product list.
-#### Adapters: RecyclerView Adapters are used to make connection between databases and recyclerviews.
-#### SmsManager: This api is used to send SMS from users phone to customers phone numbers.
-#### Database: Here two Room databases is used. one to store customer records and another for product lists.
-#### SharedPreferences: To store the shop name sharedpreferences is used here.A separate class is made for sharedpreferences and its methods.
-#### AlertDialog: Alertdialogs are used to update customers records,to alert about deletion,to alert about sending SMS.
+#### LinearLayout:   All the activities uses LinearLayout to position buttons,textviews,edittexts and recyclerviews.
+#### App Navigation Graph:   This App uses App Navigation to switch between different screens.
+#### RecyclerView:   To show customer records,name and phone number recyclerview is used in vertical mode.Recyclerview is also used to show product list.
+#### Adapters:   RecyclerView Adapters are used to make connection between databases and recyclerviews.
+#### SmsManager:   This api is used to send SMS from users phone to customers phone numbers.
+#### Database:   Here two Room databases is used. one to store customer records and another for product lists.
+#### SharedPreferences:   To store the shop name sharedpreferences is used here.A separate class is made for sharedpreferences and its methods.
+#### AlertDialog:   Alertdialogs are used to update customers records,to alert about deletion,to alert about sending SMS.
 
 ### Application Link & Future Scope :
 I have uploaded this app on playstore 1 day ago(1/1/2022) and find some problem on publication on playstore.i will fix a reupload it so it will take some days to pubish.here is my playstore developer account link and it will available here: 
