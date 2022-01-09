@@ -33,7 +33,7 @@ class ProductList : AppCompatActivity() {
         val products= productdbHandler.getProducts(this)
         val Adpater= Product_Adapter(this,products)
         val rv:RecyclerView=findViewById(R.id.rv_productlist)
-        rv.layoutManager=LinearLayoutManager(this,RecyclerView.VERTICAL,false) as RecyclerView.LayoutManager
+        rv.layoutManager= LinearLayoutManager(this,RecyclerView.VERTICAL,false)
         rv.adapter=Adpater
     }
 

@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity(){
         lateinit var Shop_NAME:TextView
     }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

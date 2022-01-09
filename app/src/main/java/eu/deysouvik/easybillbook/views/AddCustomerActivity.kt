@@ -69,7 +69,6 @@ class AddCustomerActivity : AppCompatActivity() {
             sms="Hello $name Welcome to My Shop.Your due is $customer_due rupees.And our shops due to you is $shop_due.Thank you for shopping with us"
         }
 
-
         try {
 
             val smsManager:SmsManager=SmsManager.getDefault()
@@ -79,10 +78,5 @@ class AddCustomerActivity : AppCompatActivity() {
             e.printStackTrace()
             Toast.makeText(this, e.message.toString(), Toast.LENGTH_SHORT).show()
         }
-
-
     }
-
-
-
 }

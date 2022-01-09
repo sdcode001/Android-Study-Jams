@@ -9,11 +9,11 @@ import kotlinx.coroutines.flow.Flow
 interface ProductDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun addProduct(product: Product)
+    suspend fun addProduct(productEntity: ProductEntity)
 
     @Delete
-    suspend fun deleteProduct(product: Product)
+    suspend fun deleteProduct(productEntity: ProductEntity)
 
     @Query("SELECT * FROM products")
-    fun getAllProducts(): Flow<List<Product>>
+    fun getAllProducts(): Flow<List<ProductEntity>>
 }

@@ -32,8 +32,6 @@ class Shop_Name : AppCompatActivity() {
                 }
 
                finish()
-
-
             }
         }
 

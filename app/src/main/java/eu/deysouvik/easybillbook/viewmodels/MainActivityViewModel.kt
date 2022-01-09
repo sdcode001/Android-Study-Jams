@@ -1,18 +1,15 @@
 package eu.deysouvik.easybillbook.viewmodels
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import eu.deysouvik.easybillbook.models.Customer
+import androidx.lifecycle.*
+import eu.deysouvik.easybillbook.repository.entities.customers.CustomerDao
 
-class MainActivityViewModel {
+class MainViewModel(private val customerDao : CustomerDao) : ViewModel(){
+
+    val customerList = customerDao.getAllCustomers().asLiveData()
 
     private val _shopName = MutableLiveData("")
     val shopName: LiveData<String>
         get() = _shopName
-
-    private val _customerList = MutableLiveData<List<Customer>>()
-    val customerList: LiveData<List<Customer>>
-        get() = _customerList
 
     fun setShopName(shopName: String){
         _shopName.value = shopName
@@ -21,9 +18,13 @@ class MainActivityViewModel {
     fun isValidShopName(shopName: String): Boolean{
         return shopName.isNotBlank()
     }
+}
 
-    fun getCustomerListFromDb(){
-
-//        _customerList.value = customerList
+class MainViewModelFactory(private val customerDao: CustomerDao) : ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        if(modelClass.isAssignableFrom(MainViewModel::class.java))
+            return MainViewModel(customerDao) as T
+        else
+            throw IllegalArgumentException("Unknown ViewModel class")
     }
 }

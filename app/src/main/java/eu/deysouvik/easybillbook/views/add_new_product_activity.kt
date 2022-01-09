@@ -48,8 +48,5 @@ class add_new_product_activity : AppCompatActivity() {
             product_price.text.clear()
             finish()
         }
-
-
     }
-
 }
