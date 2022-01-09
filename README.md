@@ -13,6 +13,7 @@ This "Easy Bill Book" app can maintain all customer's bills/payments/dues in the
 ### Functionality & Concepts used :
 Following are few android concepts used to achieve the functionalities in app :
 #### LinearLayout: All the activities uses LinearLayout to position buttons,textviews,edittexts and recyclerviews.
+#### App Navigation Graph: This App uses App Navigation to switch between different screens.
 #### RecyclerView: To show customer records,name and phone number recyclerview is used in vertical mode.Recyclerview is also used to show product list.
 #### Adapters: RecyclerView Adapters are used to make connection between databases and recyclerviews.
 #### SmsManager: This api is used to send SMS from users phone to customers phone numbers.
