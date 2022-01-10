@@ -4,12 +4,12 @@
 
 
 ### Problem Statement:
-We have seen lots of local shops and university/college canteens maintaining notebooks for their customers' bills/dues. But it becomes very difficult to find the old bills and keep all the past records. Moreover, customers also tend to get confused about their dues and this creates a lot of trouble. Besides, all the shops don't even have their own apps/websites where they can display all their product menu. It is where our "Easy Bill Book" app comes to the rescue with a solution which is not only user-friendly, but free of cost as well!
+We have seen lots of local shops and university/college canteens maintaining notebooks for their customers' bills/dues. But it becomes very difficult to find the old bills and keep all the past records. Moreover, the customers also tend to get confused about their dues and this creates a lot of trouble. Besides, all the shops don't even have their own apps/websites where they can display all their product menu. It is where our "Easy Bill Book" app comes to the rescue with a solution which is not only user-friendly, but free of cost as well!
 
 ### Proposed Solution :
 This "Easy Bill Book" app helps to maintain the bills/payments/dues for all the customers in one place. The shop owners can easily add/remove the customers from the due list. Whenever any customer makes any payment, the shop owners can update his bill/due records, and automatically, a SMS notification will be sent to that particular customer on his/her registered phone number. This helps both the customer and shop owner  to stay updated on dues very easily. There is also a button on home screen through which the shop owner can send a SMS notification including the payment details and dues to all customers, just in a single click!
 
-This app also provides another amazing feature for the product list. There is a separate screen displaying the list of all the products available in the shop, where the shop owners can easily maintain their products details. Whenever any new product arrives the shop, an automatic SMS notification is sent to all customers with the updated product list.
+This app also provides another amazing feature for the product list. There is a separate screen displaying the list of all the products available in the shop, where the shop owners can easily maintain their products details. Whenever any new product arrives at the shop, an automatic SMS notification is sent to all customers with the updated product list.
 
 ![Slide1](https://user-images.githubusercontent.com/92887905/147879333-b5dc36bc-b1ac-4a69-8825-05fe67002368.JPG)
 
